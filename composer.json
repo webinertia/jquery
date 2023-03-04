@@ -1,0 +1,45 @@
+{
+    "name": "webinertia/jquery",
+    "description": "Provides JQuery loading support to laminas view",
+    "type": "library",
+    "license": "BSD-3",
+    "keywords": [
+        "laminas",
+        "jquery",
+        "javascript",
+        "laminas view"
+    ],
+    "homepage": "https://github.com/webinertia/jquery",
+    "authors": [
+        {
+            "name": "Joey Smith",
+            "email": "jsmith@webinertia.net",
+            "homepage": "https://webinertia.net/"
+        }
+    ],
+    "suggest": {
+        "laminas/laminas-component-installer" : "^2.6, required for configuration injection"
+    },
+    "require": {
+        "php": "^8.0 || ^8.1",
+        "laminas/laminas-component-installer" : "^2.6",
+        "laminas/laminas-servicemanager": "^3.7",
+        "laminas/laminas-view": "^2.14"
+    },
+    "extra": {
+        "laminas": {
+            "module": "Jquery",
+            "config-provider": "Jquery\\ConfigProvider"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Jquery\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "laminas/laminas-component-installer": true
+        }
+    }
+}
